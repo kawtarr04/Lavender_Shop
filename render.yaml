@@ -1,8 +1,7 @@
 services:
   - type: web
-    name: mon-app-java
+    name: lavender-shop
     env: java
-    buildCommand: mvn package
+    buildCommand: mvn clean package -DskipTests
     startCommand: mvn jetty:run
     plan: free
-    envVars: []
